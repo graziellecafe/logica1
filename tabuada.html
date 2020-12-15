@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <script>
+        var tabuada = prompt("Qual tabuada você deseja conhecer? ");
+        var i=0; 
+
+        document.write("<h2>A tabuada do " +tabuada+ " é : <br></h2>");
+        for(i = 0; i<=10; i++){
+            var conta = i*tabuada;
+            document.write(i + " vezes " + tabuada + " é igual a: " + conta + "<br>");            
+        }
+
+    </script>
+    
+</body>
+</html>

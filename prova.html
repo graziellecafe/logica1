@@ -1,0 +1,52 @@
+<!-- Rafaela, aspirante à carreira de programadora, criou um pequeno programa para saber qual é sua porcentagem 
+    de acertos em uma prova de 50 questões de múltipla escolha. O cálculo matemático comporta dividir a quantidade 
+    de acertos pelo total de questões e multiplicar o resultado final por 100. -->
+
+
+    <!-- HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova</title>
+</head>
+
+<body>
+    <!-- Javascript -->
+    <script> 
+        alert("\n\nSeja bem-vindo! \nAqui você poderá calcular a porcentagem de acertos em uma prova! \n");
+
+        // Declaração de variáveis
+        var questoes = prompt("Digite a quantidade de QUESTÕES da prova: ");
+        var acertos = prompt("Digite a quantidade de ACERTOS na prova: ");
+        var media = prompt("Digite a média padrão das provas em %: ");
+        var porcentagem = (acertos/questoes)*100;
+
+        // Impressão na página dos dados digitados
+        document.write("<h2>Dados inseridos</h2>");
+        document.write("A quantidade de <b>questões</b> na prova foram:" + questoes);
+        document.write("<br>");
+        document.write("A quantidade de <b>acertos</b> na prova foram: " + acertos);
+        document.write("<br>");
+        document.write("A <b>média desejada</b> para a prova é de " + media + "%");
+        document.write("<br><br>");
+
+        // Cálculo da porcentagem de acertos
+        document.write("<h2>Cálculo da porcentagem de acertos</h2>");
+        document.write("Você acertou " + porcentagem + "% da prova!<br>");
+
+        // Condicional do acerto da prova
+        if(porcentagem>media){
+            document.write ("Parabéns! Sua nota foi maior que a média!");
+        }
+        else{
+            document.write("Que pena... Sua nota foi menor que a média.");
+        }
+
+    </script>
+<!-- Fim Javascript -->
+
+<!-- <button name="button">Click me</button> botão Click me HTML -->
+</body>
+</html>
