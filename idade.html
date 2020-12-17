@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <script> 
+    // funções
+    function jumpLine(){
+        printMsg("<br>");
+    }
+
+    function printMsg(msg){
+        document.write(msg);
+    }
+    
+    // declaração de variáveis
+    var currentYear = 2020; 
+
+    var joaoBirth = 1965;
+    var anaBirth = 1970;
+    var brunoBirth = 1992;
+
+    var joaoAge = currentYear - joaoBirth;
+    var anaAge = currentYear - anaBirth; 
+    var brunoAge = currentYear - brunoBirth;
+
+    var sumAge = (joaoAge + anaAge + brunoAge);
+    var mediaAge = (joaoAge + anaAge + brunoAge)/3;
+
+    printMsg("<h2> Idade da família </h2>");
+    printMsg("João tem " + (joaoAge) + " anos");
+    jumpLine();
+    printMsg("Ana tem " + (anaAge) + " anos");
+    jumpLine();  
+    printMsg("Bruno tem " + (brunoAge) + " anos");
+    jumpLine();
+    
+    printMsg("<h2> Média da idade da família </h2>");
+    printMsg("A média das idades da família é: " + mediaAge);
+    jumpLine(); 
+    printMsg("A média das idades da familia <b> arredondada é:</b> " + Math.round(mediaAge));
+    </script>    
+</body>
+</html>
